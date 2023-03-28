@@ -3,11 +3,6 @@
   padding-top: 8.25rem;
   max-width: 960px;
   margin: auto;
-  img {
-    margin-top: 4.5rem;
-    width: 100%;
-    border-radius: 1.5rem;
-  }
 }
 
 .header {
@@ -31,6 +26,19 @@
       weight: 500;
     }
   }
+}
+
+.previewVideoImage {
+  margin-top: 4.5rem;
+  width: 100%;
+  border-radius: 1.5rem;
+  transition: all 0.4s ease;
+}
+
+.previewVideoImage:hover {
+  transform: scale(1.01);
+  filter: drop-shadow(0px 40px 30px rgb(0 0 0 / .15));
+  cursor: pointer;
 }
 
 @mixin downloadButton {

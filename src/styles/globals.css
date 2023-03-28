@@ -10,6 +10,10 @@
   color: #333;
 }
 
+::selection {
+  background: rgba(0,230,184,.2);
+}
+
 a {
   display: inline-block;
 }
@@ -17,7 +21,7 @@ a {
 a,
 button {
   text-decoration: none;
-  transition: all 0.3s;
+  transition: all 0.25s ease-in;
 }
 
 a:hover {

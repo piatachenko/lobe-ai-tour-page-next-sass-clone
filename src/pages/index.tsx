@@ -2,9 +2,9 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import styles from "@/styles/Home.module.scss";
 import Head from "next/head";
-import Image from "next/image";
 
 export default function Home() {
+
   return (
     <>
       <Head>
@@ -30,12 +30,14 @@ export default function Home() {
               <img
                 src="https://www.lobe.ai/assets/tour/Video.jpg"
                 alt="Learn more about Lobe by watching our tour video."
+                className={styles.previewVideoImage}
               />
             </div>
             <div className={styles.downloadSection}>
               <p>Train your app with Lobe</p>
               <button>Download</button>
             </div>
+            
           </section>
         </main>
         <Footer />
