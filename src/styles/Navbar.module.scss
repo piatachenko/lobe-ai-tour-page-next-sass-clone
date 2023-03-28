@@ -10,6 +10,9 @@
   justify-content: center;
   backdrop-filter: blur(20px);
   background-color: rgba($color: #fff, $alpha: 0.8);
+  .logo a:hover {
+    transform: scale(1);
+  }
 }
 
 .allItems {
@@ -31,7 +34,8 @@
 .navItems {
   display: flex;
   justify-content: center;
-  gap: 2.5rem;
+  gap: 3rem;
+  margin-left: 3rem;
 
   li {
     a {
@@ -40,6 +44,10 @@
         size: 1.125rem;
       }
       color: #767676;
+    }
+
+    a:hover {
+      color: #333;
     }
   }
 }
