@@ -21,16 +21,16 @@ export default function Footer() {
             <ul className={styles.about}>
               <li>About</li>
               <li>
-                <a href="">Download</a>
+                <a href="https://www.lobe.ai/tour#signup">Download</a>
               </li>
               <li>
-                <a href="">Overview</a>
+                <a href="https://www.lobe.ai/">Overview</a>
               </li>
               <li>
-                <a href="">Examples</a>
+                <a href="https://www.lobe.ai/examples">Examples</a>
               </li>
               <li>
-                <a href="">Blog</a>
+                <a href="https://www.lobe.ai/blog">Blog</a>
               </li>
             </ul>
           </li>
@@ -38,16 +38,20 @@ export default function Footer() {
             <ul className={styles.general}>
               <li>General</li>
               <li>
-                <a href="">Notice</a>
+                <a href="https://www.lobe.ai/NOTICE.txt">Notice</a>
               </li>
               <li>
-                <a href="">License</a>
+                <a href="https://www.lobe.ai/license">License</a>
               </li>
               <li>
-                <a href="">Press Inquiry</a>
+                <a href="https://news.microsoft.com/microsoft-public-relations-contacts/">
+                  Press Inquiry
+                </a>
               </li>
               <li>
-                <a href="">Press Images</a>
+                <a href="https://www.lobe.ai/assets/press/lobe-press-images.zip">
+                  Press Images
+                </a>
               </li>
             </ul>
           </li>
@@ -55,23 +59,25 @@ export default function Footer() {
             <ul className={styles.resources}>
               <li>Resources</li>
               <li>
-                <a href="">Help</a>
+                <a href="https://www.lobe.ai/docs/welcome/welcome">Help</a>
               </li>
               <li>
-                <a href="">Tour</a>
+                <a href="https://www.lobe.ai/tour">Tour</a>
               </li>
               <li>
-                <a href="">Contact</a>
+                <a href="mailto:lobeai@microsoft.com">Contact</a>
               </li>
               <li>
-                <a href="">Privacy</a>
+                <a href="https://go.microsoft.com/fwlink/?LinkId=521839">
+                  Privacy
+                </a>
               </li>
             </ul>
           </li>
           <li>
             <ul className={styles.links}>
               <li>
-                <a href="">
+                <a href="https://reddit.com/r/lobe">
                   <svg
                     width="26px"
                     height="26px"
@@ -104,7 +110,7 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="">
+                <a href="https://twitter.com/lobe_ai">
                   <svg
                     width="26px"
                     height="26px"
@@ -139,7 +145,7 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="">
+                <a href="https://www.youtube.com/channel/UCYryctkBIcCszPAFg79rwAw">
                   <svg
                     width="26px"
                     height="26px"

@@ -14,7 +14,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>
-        <Navbar />
+        <Navbar currentPage="tour" />
         <main className={styles.main}>
           <section className={styles.section}>
             <header className={styles.header}>
