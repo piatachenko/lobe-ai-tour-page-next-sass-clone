@@ -1,22 +1,19 @@
-import styles from "@/styles/Home.module.scss";
-import navbarStyles from "@/styles/Navbar.module.scss";
+import styles from "@/styles/Navbar.module.scss";
 import React from "react";
 import Logo from "./Logo";
 
 export default function Navbar() {
   return (
     <div>
-      <nav className={navbarStyles.nav}>
-        <ul className={navbarStyles.main}>
-          <li>
-            <span>
-              <a href="">
-                <Logo width="5rem" height="auto" />
-              </a>
-            </span>
+      <nav className={styles.nav}>
+        <ul className={styles.allItems}>
+          <li className={styles.logo}>
+            <a href="">
+              <Logo width="5rem" height="auto" />
+            </a>
           </li>
           <li>
-            <ul className={navbarStyles.categories}>
+            <ul className={styles.navItems}>
               <li>
                 <a href="">Overview</a>
               </li>
@@ -34,14 +31,8 @@ export default function Navbar() {
               </li>
             </ul>
           </li>
-          <li>
-            <span>
-              <button
-                className={`${styles.downloadButton} ${navbarStyles.downloadButton}`}
-              >
-                Download
-              </button>
-            </span>
+          <li className={styles.downloadButton}>
+            <button>Download</button>
           </li>
         </ul>
       </nav>

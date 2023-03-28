@@ -1,3 +1,5 @@
+@import "Home.module";
+
 .nav {
   position: fixed;
   top: 0;
@@ -10,19 +12,27 @@
   background-color: rgba($color: #fff, $alpha: 0.8);
 }
 
-.main {
+.allItems {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 5rem;
   width: 100%;
   max-width: 1300px;
+  button {
+    @include downloadButton;
+    padding: {
+      right: 1.4rem;
+      left: 1.4rem;
+    }
+  }
 }
 
-.categories {
+.navItems {
   display: flex;
   justify-content: center;
   gap: 2.5rem;
+
   li {
     a {
       font: {
@@ -31,17 +41,5 @@
       }
       color: #767676;
     }
-  }
-}
-
-.downloadButton {
-  font: {
-    size: 1.125rem;
-    weight: 700;
-  }
-  color: white;
-  padding: {
-    right: 1.4rem;
-    left: 1.4rem;
   }
 }

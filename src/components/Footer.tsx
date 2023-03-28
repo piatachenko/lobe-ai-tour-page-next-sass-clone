@@ -1,12 +1,13 @@
 import React from "react";
 import Logo from "./Logo";
+import styles from '@/styles/Footer.module.scss';
 
 export default function Footer() {
   return (
-    <footer>
-      <ul>
+    <footer className={styles.container}>
+      <ul className={styles.footerCategories}>
         <li>
-          <ul>
+          <ul className={styles.product}>
             <li>
               <Logo width="5rem" height="auto" />
             </li>
@@ -16,7 +17,7 @@ export default function Footer() {
           </ul>
         </li>
         <li>
-          <ul>
+          <ul className={styles.about}>
             <li>About</li>
             <li>
               <a href="">Download</a>
@@ -33,7 +34,7 @@ export default function Footer() {
           </ul>
         </li>
         <li>
-          <ul>
+          <ul className={styles.general}>
             <li>General</li>
             <li>
               <a href="">Notice</a>
@@ -50,7 +51,7 @@ export default function Footer() {
           </ul>
         </li>
         <li>
-          <ul>
+          <ul className={styles.resources}>
             <li>Resources</li>
             <li>
               <a href="">Help</a>
@@ -67,7 +68,7 @@ export default function Footer() {
           </ul>
         </li>
         <li>
-          <ul>
+          <ul className={styles.links}>
             <li>
               <a href="">
                 <svg

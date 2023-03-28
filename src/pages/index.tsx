@@ -18,49 +18,27 @@ export default function Home() {
         <main className={styles.main}>
           <section className={styles.section}>
             <header className={styles.header}>
-              <h1>Lobe <span>Tour</span></h1>
-            <p>
-              Build your first machine learning model in ten minutes. No code or
-              experience required.
-            </p>
+              <h1>
+                Lobe <span>Tour</span>
+              </h1>
+              <p>
+                Build your first machine learning model in ten minutes. No code
+                or experience required.
+              </p>
             </header>
-          <div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius iste culpa laudantium quisquam aut dolorem laborum ipsum sed quasi? Vel deserunt expedita fugit totam laudantium sapiente cumque magni sunt eveniet.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius iste culpa laudantium quisquam aut dolorem laborum ipsum sed quasi? Vel deserunt expedita fugit totam laudantium sapiente cumque magni sunt eveniet.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius iste culpa laudantium quisquam aut dolorem laborum ipsum sed quasi? Vel deserunt expedita fugit totam laudantium sapiente cumque magni sunt eveniet.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius iste culpa laudantium quisquam aut dolorem laborum ipsum sed quasi? Vel deserunt expedita fugit totam laudantium sapiente cumque magni sunt eveniet.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius iste culpa laudantium quisquam aut dolorem laborum ipsum sed quasi? Vel deserunt expedita fugit totam laudantium sapiente cumque magni sunt eveniet.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius iste culpa laudantium quisquam aut dolorem laborum ipsum sed quasi? Vel deserunt expedita fugit totam laudantium sapiente cumque magni sunt eveniet.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius iste culpa laudantium quisquam aut dolorem laborum ipsum sed quasi? Vel deserunt expedita fugit totam laudantium sapiente cumque magni sunt eveniet.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius iste culpa laudantium quisquam aut dolorem laborum ipsum sed quasi? Vel deserunt expedita fugit totam laudantium sapiente cumque magni sunt eveniet.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius iste culpa laudantium quisquam aut dolorem laborum ipsum sed quasi? Vel deserunt expedita fugit totam laudantium sapiente cumque magni sunt eveniet.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius iste culpa laudantium quisquam aut dolorem laborum ipsum sed quasi? Vel deserunt expedita fugit totam laudantium sapiente cumque magni sunt eveniet.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius iste culpa laudantium quisquam aut dolorem laborum ipsum sed quasi? Vel deserunt expedita fugit totam laudantium sapiente cumque magni sunt eveniet.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius iste culpa laudantium quisquam aut dolorem laborum ipsum sed quasi? Vel deserunt expedita fugit totam laudantium sapiente cumque magni sunt eveniet.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius iste culpa laudantium quisquam aut dolorem laborum ipsum sed quasi? Vel deserunt expedita fugit totam laudantium sapiente cumque magni sunt eveniet.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius iste culpa laudantium quisquam aut dolorem laborum ipsum sed quasi? Vel deserunt expedita fugit totam laudantium sapiente cumque magni sunt eveniet.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius iste culpa laudantium quisquam aut dolorem laborum ipsum sed quasi? Vel deserunt expedita fugit totam laudantium sapiente cumque magni sunt eveniet.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius iste culpa laudantium quisquam aut dolorem laborum ipsum sed quasi? Vel deserunt expedita fugit totam laudantium sapiente cumque magni sunt eveniet.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius iste culpa laudantium quisquam aut dolorem laborum ipsum sed quasi? Vel deserunt expedita fugit totam laudantium sapiente cumque magni sunt eveniet.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius iste culpa laudantium quisquam aut dolorem laborum ipsum sed quasi? Vel deserunt expedita fugit totam laudantium sapiente cumque magni sunt eveniet.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius iste culpa laudantium quisquam aut dolorem laborum ipsum sed quasi? Vel deserunt expedita fugit totam laudantium sapiente cumque magni sunt eveniet.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius iste culpa laudantium quisquam aut dolorem laborum ipsum sed quasi? Vel deserunt expedita fugit totam laudantium sapiente cumque magni sunt eveniet.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius iste culpa laudantium quisquam aut dolorem laborum ipsum sed quasi? Vel deserunt expedita fugit totam laudantium sapiente cumque magni sunt eveniet.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius iste culpa laudantium quisquam aut dolorem laborum ipsum sed quasi? Vel deserunt expedita fugit totam laudantium sapiente cumque magni sunt eveniet.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius iste culpa laudantium quisquam aut dolorem laborum ipsum sed quasi? Vel deserunt expedita fugit totam laudantium sapiente cumque magni sunt eveniet.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius iste culpa laudantium quisquam aut dolorem laborum ipsum sed quasi? Vel deserunt expedita fugit totam laudantium sapiente cumque magni sunt eveniet.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius iste culpa laudantium quisquam aut dolorem laborum ipsum sed quasi? Vel deserunt expedita fugit totam laudantium sapiente cumque magni sunt eveniet.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius iste culpa laudantium quisquam aut dolorem laborum ipsum sed quasi? Vel deserunt expedita fugit totam laudantium sapiente cumque magni sunt eveniet.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius iste culpa laudantium quisquam aut dolorem laborum ipsum sed quasi? Vel deserunt expedita fugit totam laudantium sapiente cumque magni sunt eveniet.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius iste culpa laudantium quisquam aut dolorem laborum ipsum sed quasi? Vel deserunt expedita fugit totam laudantium sapiente cumque magni sunt eveniet.
-          </div>
-          <div>
-            <p>Train your app with Lobe</p>
-            <button className={styles.downloadButton}>Download</button>
-          </div>
+            <div>
+              <img
+                src="https://www.lobe.ai/assets/tour/Video.jpg"
+                alt="Learn more about Lobe by watching our tour video."
+              />
+            </div>
+            <div className={styles.downloadSection}>
+              <p>Train your app with Lobe</p>
+              <button>Download</button>
+            </div>
           </section>
         </main>
-        <Footer/>
+        <Footer />
       </div>
     </>
   );
