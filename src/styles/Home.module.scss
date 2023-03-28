@@ -1,4 +1,39 @@
 .main {
+  text-align: center;
+  padding-top: 8.25rem;
+}
+
+.downloadButton {
+  background-color: #04ddb2;
+  border: none;
+  border-radius: 9999px;
+  padding: 0.7rem 3rem;
+}
+
+.header {
+  h1 {
+    font: {
+      weight: 900;
+      size: 4rem;
+    }
+    letter-spacing: -0.035em;
+    word-spacing: 0.1em;
+    span {
+      color: #04ddb2;
+    }
+  }
+  p {
+    max-width: 35rem;
+    margin: 0.4rem auto 0;
+    line-height: 2.25rem;
+    font: {
+      size: 1.5rem;
+      weight: 500;
+    }
+  }
+}
+
+/* .main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -130,7 +165,7 @@
   z-index: -1;
 }
 
-/* Conic Gradient Animation */
+//Conic Gradient Animation
 .thirteen::before {
   animation: 6s rotate linear infinite;
   width: 200%;
@@ -138,7 +173,7 @@
   background: var(--tile-border);
 }
 
-/* Inner Square */
+//Inner Square
 .thirteen::after {
   inset: 0;
   padding: 1px;
@@ -151,7 +186,7 @@
   background-clip: content-box;
 }
 
-/* Enable hover only on non-touch devices */
+// Enable hover only on non-touch devices
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
     background: rgba(var(--card-rgb), 0.1);
@@ -173,7 +208,7 @@
   }
 }
 
-/* Mobile */
+//Mobile
 @media (max-width: 700px) {
   .content {
     padding: 4rem;
@@ -250,7 +285,7 @@
   }
 }
 
-/* Tablet and Smaller Desktop */
+//Tablet and Smaller Desktop
 @media (min-width: 701px) and (max-width: 1120px) {
   .grid {
     grid-template-columns: repeat(2, 50%);
@@ -275,4 +310,4 @@
   to {
     transform: rotate(0deg);
   }
-}
+} */
