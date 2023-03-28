@@ -37,13 +37,38 @@
 
 .previewVideoImage:hover {
   transform: scale(1.01);
-  filter: drop-shadow(0px 40px 30px rgb(0 0 0 / .15));
+  filter: drop-shadow(0px 40px 30px rgb(0 0 0 / 0.15));
   cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.introductionVideoContainer {
+  position: fixed;
+  inset: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(12px);
+  background-color: rgba($color: #000, $alpha: 0.6);
+  button {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    background: transparent;
+    svg {
+      stroke: #888;
+    }
+  }
+  iframe {
+    border-radius: 20px;
+  }
 }
 
 @mixin downloadButton {
   background-color: #04ddb2;
-  border: none;
   border-radius: 9999px;
   padding: 0.7rem 2.3rem 0.75rem;
   font: {
