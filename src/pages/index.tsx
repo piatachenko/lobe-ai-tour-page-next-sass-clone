@@ -40,7 +40,11 @@ export default function Home() {
                 onClick={handleClick}
               />
             </div>
-            <div className={video ? styles.introductionVideoContainer : styles.hidden}>
+            <div
+              className={
+                video ? styles.introductionVideoContainer : styles.hidden
+              }
+            >
               <button onClick={handleClick}>
                 <svg
                   width="32px"
@@ -72,10 +76,9 @@ export default function Home() {
               <iframe
                 width="1120"
                 height="699"
-                src="https://www.youtube.com/embed/Mdcw3Sb98DA"
-                title="YouTube video player"
+                src="https://www.youtube.com/embed/Mdcw3Sb98DA?autoplay=1&mute=1"
                 frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               ></iframe>
             </div>
