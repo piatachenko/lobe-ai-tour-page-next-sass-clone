@@ -5,10 +5,10 @@ import Head from "next/head";
 import { useState } from "react";
 
 export default function Home() {
-  const [video, setVideo] = useState(false);
+  const [tourVideo, setTourVideo] = useState(false);
 
   function handleClick() {
-    setVideo(!video);
+    setTourVideo(!tourVideo);
   }
 
   return (
@@ -40,10 +40,8 @@ export default function Home() {
                 onClick={handleClick}
               />
             </div>
-            <div
-              className={
-                video ? styles.introductionVideoContainer : styles.hidden
-              }
+            {tourVideo ? (<div
+              className={styles.tourVideoContainer}
             >
               <button onClick={handleClick}>
                 <svg
@@ -78,10 +76,10 @@ export default function Home() {
                 height="699"
                 src="https://www.youtube.com/embed/Mdcw3Sb98DA?autoplay=1&mute=1"
                 frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
               ></iframe>
-            </div>
+            </div>) : null}
             <div className={styles.downloadSection}>
               <p>Train your app with Lobe</p>
               <button>Download</button>
