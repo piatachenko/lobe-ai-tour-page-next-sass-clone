@@ -10,6 +10,7 @@
   justify-content: center;
   backdrop-filter: blur(20px);
   background-color: rgba($color: #fff, $alpha: 0.8);
+  z-index: 10;
   .logo a:hover {
     transform: scale(1);
   }

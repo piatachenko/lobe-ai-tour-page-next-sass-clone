@@ -6,6 +6,7 @@
 }
 
 .header {
+  margin-bottom: 4.5rem;
   h1 {
     font: {
       weight: 900;
@@ -28,21 +29,16 @@
   }
 }
 
-.previewVideoImage {
-  margin-top: 4.5rem;
+.tourVideoPreviewImage {
   width: 100%;
   border-radius: 1.5rem;
   transition: all 0.4s ease;
 }
 
-.previewVideoImage:hover {
+.tourVideoPreviewImage:hover {
   transform: scale(1.01);
   filter: drop-shadow(0px 40px 30px rgb(0 0 0 / 0.15));
   cursor: pointer;
-}
-
-.hidden {
-  display: none;
 }
 
 .tourVideoContainer {
