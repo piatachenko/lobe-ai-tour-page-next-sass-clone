@@ -1,5 +1,6 @@
 import styles from "@/styles/Navbar.module.scss";
 import React, { useState } from "react";
+import Hamburger from "./Hamburger";
 import Logo from "./Logo";
 
 interface NavbarProps {
@@ -12,12 +13,13 @@ export default function Navbar({ currentPage }: NavbarProps) {
     setMobileDropdownNavbar(!mobileDropdownNavbar);
   }
   return (
-    <div>
-      <nav className={styles.nav}>
-        <ul
-          className={`${styles.allItems} ${
+    <>
+      <nav className={`${styles.nav} ${
             mobileDropdownNavbar ? styles.dropped : ""
-          }`}
+          }`}>
+        
+        <ul
+          className={`${styles.allItems}`}
         >
           <li>
             <ul className={styles.dropdownHeader}>
@@ -28,11 +30,7 @@ export default function Navbar({ currentPage }: NavbarProps) {
               </li>
               <li className={styles.navToggle}>
                 <button onClick={handleClick}>
-                  <span
-                    className={`${styles.hamburger} ${
-                      mobileDropdownNavbar ? styles.hamburgerClose : ""
-                    } `}
-                  ></span>
+                  <Hamburger currentState={mobileDropdownNavbar} />
                 </button>
               </li>
             </ul>
@@ -91,17 +89,13 @@ export default function Navbar({ currentPage }: NavbarProps) {
                 </a>
               </li>
             </ul>
-            <span>
-              <button className={styles.dropdownDownloadButton}>
-                Download
-              </button>
-            </span>
+            <button className={styles.dropdownDownloadButton}>Download</button>
           </li>
           <li>
             <button className={styles.downloadButton}>Download</button>
           </li>
         </ul>
       </nav>
-    </div>
+    </>
   );
 }

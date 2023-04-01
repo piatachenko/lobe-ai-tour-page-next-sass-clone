@@ -16,12 +16,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 5rem;
+  z-index: 10;
+  transition: all 0.5s ease;
   backdrop-filter: blur(20px);
   background-color: rgba($color: #fff, $alpha: 0.8);
-  z-index: 10;
-  .logo a:hover {
-    transform: scale(1);
-  }
 }
 
 .allItems {
@@ -30,14 +29,16 @@
   align-items: center;
   width: 100%;
   max-width: 1300px;
-  height: 5rem;
   padding-right: 2rem;
   padding-left: 2rem;
-  transition: all 0.5s ease;
 }
 
 .logo {
   padding-top: 0.3125rem;
+}
+
+.logo a:hover {
+  transform: scale(1);
 }
 
 .navToggle {
@@ -56,50 +57,6 @@
     top: 50%;
     left: 50%;
   }
-}
-
-.hamburger,
-.hamburger::after,
-.hamburger::before {
-  position: absolute;
-  border-radius: 9999px;
-  height: 2px;
-  width: 18px;
-  background: #333;
-  display: block;
-  content: "";
-  transition: all 0.25s cubic-bezier(0.945, 0.9, 0.355, 1);
-  left: 0;
-}
-
-.hamburger::before {
-  top: -5.5px;
-}
-
-.hamburger {
-  top: 8.3px;
-}
-
-.hamburger::after {
-  top: 5px;
-}
-
-.hamburgerClose.hamburger::before {
-  transform: rotate(45deg);
-  transform-origin: top left;
-  left: 3px;
-  top: -6px;
-}
-
-.hamburgerClose.hamburger::after {
-  transform: rotate(-45deg);
-  transform-origin: bottom left;
-  left: 3px;
-  top: 6px;
-}
-
-.hamburgerClose.hamburger {
-  background: transparent;
 }
 
 .navItems {
@@ -162,30 +119,57 @@
     display: block;
   }
 
-  .allItems.dropped {
+  .nav.dropped {
     height: 32.5rem;
   }
 
   .dropdownHeader {
     height: 5rem;
     display: flex;
+    position: absolute;
+    top: 0;
+    left: 2rem;
+    right: 2rem;
     justify-content: space-between;
     align-items: center;
   }
 
   .dropdown.hidden {
     display: none;
-    height: 0;
+    // height: 0;
   }
 
   .dropdown {
-    span {
-      padding-bottom: 30px;
+    ul {
+      li {
+        a {
+          animation: a 0.5s ease;
+        }
+      }
+    }
+    button {
+      animation: a 0.5s ease;
+    }
+  }
+
+  @keyframes a {
+    0% {
+      opacity: 0;
+      transform: translateY(219px);
+    }
+    25% {
+      opacity: 0;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
     }
   }
 
   .navItems {
     margin-left: 0;
+    padding-top: 2rem;
     flex-direction: column;
     text-align: center;
     hr {

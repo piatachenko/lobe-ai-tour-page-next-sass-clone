@@ -1,0 +1,43 @@
+.hamburger,
+.hamburger::after,
+.hamburger::before {
+  position: absolute;
+  border-radius: 9999px;
+  height: 2px;
+  width: 18px;
+  background: #333;
+  display: block;
+  content: "";
+  transition: all 0.25s cubic-bezier(0.945, 0.9, 0.355, 1);
+  left: 0;
+}
+
+.hamburger::before {
+  top: -5.5px;
+}
+
+.hamburger {
+  top: 8.3px;
+}
+
+.hamburger::after {
+  top: 5px;
+}
+
+.hamburgerClose.hamburger::before {
+  transform: rotate(45deg);
+  transform-origin: top left;
+  left: 3px;
+  top: -6px;
+}
+
+.hamburgerClose.hamburger::after {
+  transform: rotate(-45deg);
+  transform-origin: bottom left;
+  left: 3px;
+  top: 6px;
+}
+
+.hamburgerClose.hamburger {
+  background: transparent;
+}
