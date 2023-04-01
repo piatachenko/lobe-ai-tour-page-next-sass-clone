@@ -71,8 +71,6 @@ export default function Home() {
                   </svg>
                 </button>
                 <iframe
-                  width="1120"
-                  height="699"
                   src="https://www.youtube.com/embed/Mdcw3Sb98DA?autoplay=1"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
