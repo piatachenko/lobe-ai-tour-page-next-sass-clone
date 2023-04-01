@@ -154,3 +154,35 @@
     }
   }
 }
+
+@media screen and (max-width: 730px) {
+  .main {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+
+  .header {
+    h1 {
+      font-size: 2.25rem;
+    }
+    p {
+      max-width: 25rem;
+      font-size: 1.05rem;
+      line-height: 1.5rem;
+    }
+  }
+
+  .downloadSection {
+    h2 {
+      max-width: 20rem;
+      font-size: 2.25rem;
+      line-height: 2.5rem;
+      margin-top: 3rem;
+    }
+    button {
+      margin-top: 2.1rem;
+      font-size: 1.075rem;
+      padding: .6rem 1.85rem .675rem;
+    }
+  }
+}

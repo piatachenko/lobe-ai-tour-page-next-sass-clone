@@ -42,7 +42,7 @@ export default function Navbar({ currentPage }: NavbarProps) {
           >
             <ul className={styles.navItems}>
               <li>
-                <hr />
+                {/* <hr /> */}
               </li>
               <li>
                 <a
