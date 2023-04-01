@@ -55,7 +55,7 @@
 .tourVideoContainer {
   position: fixed;
   z-index: 20;
-  padding: 5rem;
+  padding: 15%;
   inset: 0px;
   display: flex;
   justify-content: center;
@@ -71,10 +71,19 @@
       stroke: #bbb;
     }
   }
-  iframe {
-    border-radius: 20px;
-    width: 1120px;
-    height: 699px;
+  div {
+    position: relative;
+    padding-bottom: 62.4375%;
+    width: 100%;
+    height: 0;
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+    }
   }
 }
 
@@ -145,6 +154,10 @@
     }
   }
 
+  .tourVideoContainer {
+    padding: 7%;
+  }
+
   .downloadSection {
     h2 {
       max-width: 30rem;
@@ -171,6 +184,10 @@
       line-height: 1.5rem;
     }
   }
+  
+  .tourVideoContainer {
+    padding: 3%;
+  }
 
   .downloadSection {
     h2 {
@@ -182,7 +199,7 @@
     button {
       margin-top: 2.1rem;
       font-size: 1.075rem;
-      padding: .6rem 1.85rem .675rem;
+      padding: 0.6rem 1.85rem 0.675rem;
     }
   }
 }

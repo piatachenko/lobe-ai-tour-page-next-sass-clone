@@ -70,12 +70,14 @@ export default function Home() {
                     </g>
                   </svg>
                 </button>
-                <iframe
-                  src="https://www.youtube.com/embed/Mdcw3Sb98DA?autoplay=1"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                ></iframe>
+                <div>
+                  <iframe
+                    src="https://www.youtube.com/embed/Mdcw3Sb98DA?autoplay=1"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                  ></iframe>
+                </div>
               </div>
             ) : null}
             <div className={styles.downloadSection}>
