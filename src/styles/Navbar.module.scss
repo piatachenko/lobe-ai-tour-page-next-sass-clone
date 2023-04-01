@@ -1,5 +1,13 @@
 @import "Home.module";
 
+@mixin navDownloadButton {
+  @include downloadButton;
+  padding: {
+    right: 1.4rem;
+    left: 1.4rem;
+  }
+}
+
 .nav {
   position: fixed;
   top: 0;
@@ -20,24 +28,93 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 5rem;
   width: 100%;
   max-width: 1300px;
+  height: 5rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  transition: all 0.5s ease;
+}
+
+.logo {
+  padding-top: 0.3125rem;
+}
+
+.navToggle {
+  display: none;
+  cursor: pointer;
+  border-radius: 9999px;
+  background-color: #eee;
+  padding: 20px;
+  position: relative;
   button {
-    @include downloadButton;
-    padding: {
-      right: 1.4rem;
-      left: 1.4rem;
-    }
+    width: 18px;
+    height: 18px;
+    border-radius: 9999px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
   }
+}
+
+.hamburger,
+.hamburger::after,
+.hamburger::before {
+  position: absolute;
+  border-radius: 9999px;
+  height: 2px;
+  width: 18px;
+  background: #333;
+  display: block;
+  content: "";
+  transition: all 0.25s cubic-bezier(0.945, 0.9, 0.355, 1);
+  left: 0;
+}
+
+.hamburger::before {
+  top: -5.5px;
+}
+
+.hamburger {
+  top: 8.3px;
+}
+
+.hamburger::after {
+  top: 5px;
+}
+
+.hamburgerClose.hamburger::before {
+  transform: rotate(45deg);
+  transform-origin: top left;
+  left: 3px;
+  top: -6px;
+}
+
+.hamburgerClose.hamburger::after {
+  transform: rotate(-45deg);
+  transform-origin: bottom left;
+  left: 3px;
+  top: 6px;
+}
+
+.hamburgerClose.hamburger {
+  background: transparent;
 }
 
 .navItems {
   display: flex;
   justify-content: center;
   gap: 3rem;
-  margin-left: 3rem;
-
+  margin-left: 1rem;
+  hr {
+    display: none;
+    position: absolute;
+    border-top: 0.5px solid #eee;
+    top: 5rem;
+    left: 0;
+    width: 100vw;
+  }
   li {
     a {
       font: {
@@ -55,4 +132,73 @@
   }
 }
 
+.dropdownDownloadButton {
+  @include navDownloadButton;
+  width: 100%;
+  max-width: 15rem;
+  font-size: 1.2rem;
+  margin: {
+    top: 3rem;
+    right: auto;
+    left: auto;
+  }
+  display: none;
+}
 
+.downloadButton {
+  @include navDownloadButton;
+}
+
+@media screen and (max-width: 1200px) {
+  .navItems {
+    gap: 2.25rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .allItems,
+  .navToggle,
+  .dropdownDownloadButton {
+    display: block;
+  }
+
+  .allItems.dropped {
+    height: 32.5rem;
+  }
+
+  .dropdownHeader {
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .dropdown.hidden {
+    display: none;
+    height: 0;
+  }
+
+  .dropdown {
+    span {
+      padding-bottom: 30px;
+    }
+  }
+
+  .navItems {
+    margin-left: 0;
+    flex-direction: column;
+    text-align: center;
+    hr {
+      display: block;
+    }
+    li {
+      a {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .downloadButton {
+    display: none;
+  }
+}

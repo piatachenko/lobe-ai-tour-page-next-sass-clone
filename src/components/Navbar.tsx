@@ -1,5 +1,5 @@
 import styles from "@/styles/Navbar.module.scss";
-import React from "react";
+import React, { useState } from "react";
 import Logo from "./Logo";
 
 interface NavbarProps {
@@ -7,17 +7,45 @@ interface NavbarProps {
 }
 
 export default function Navbar({ currentPage }: NavbarProps) {
+  const [mobileDropdownNavbar, setMobileDropdownNavbar] = useState(false);
+  function handleClick() {
+    setMobileDropdownNavbar(!mobileDropdownNavbar);
+  }
   return (
     <div>
       <nav className={styles.nav}>
-        <ul className={styles.allItems}>
-          <li className={styles.logo}>
-            <a href="https://www.lobe.ai/">
-              <Logo width="5rem" height="auto" />
-            </a>
-          </li>
+        <ul
+          className={`${styles.allItems} ${
+            mobileDropdownNavbar ? styles.dropped : ""
+          }`}
+        >
           <li>
+            <ul className={styles.dropdownHeader}>
+              <li className={styles.logo}>
+                <a href="https://www.lobe.ai/">
+                  <Logo width="5rem" height="auto" />
+                </a>
+              </li>
+              <li className={styles.navToggle}>
+                <button onClick={handleClick}>
+                  <span
+                    className={`${styles.hamburger} ${
+                      mobileDropdownNavbar ? styles.hamburgerClose : ""
+                    } `}
+                  ></span>
+                </button>
+              </li>
+            </ul>
+          </li>
+          <li
+            className={`${styles.dropdown} ${
+              mobileDropdownNavbar ? "" : styles.hidden
+            }`}
+          >
             <ul className={styles.navItems}>
+              <li>
+                <hr />
+              </li>
               <li>
                 <a
                   href="https://www.lobe.ai/"
@@ -63,9 +91,14 @@ export default function Navbar({ currentPage }: NavbarProps) {
                 </a>
               </li>
             </ul>
+            <span>
+              <button className={styles.dropdownDownloadButton}>
+                Download
+              </button>
+            </span>
           </li>
-          <li className={styles.downloadButton}>
-            <button>Download</button>
+          <li>
+            <button className={styles.downloadButton}>Download</button>
           </li>
         </ul>
       </nav>

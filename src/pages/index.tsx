@@ -81,7 +81,7 @@ export default function Home() {
               </div>
             ) : null}
             <div className={styles.downloadSection}>
-              <p>Train your app with Lobe</p>
+              <h2>Train your app with Lobe</h2>
               <button>Download</button>
             </div>
           </section>

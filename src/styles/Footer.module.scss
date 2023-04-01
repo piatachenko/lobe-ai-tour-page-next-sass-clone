@@ -7,6 +7,8 @@
 .container {
   width: 100%;
   max-width: 1080px;
+  margin-right: 2rem;
+  margin-left: 2rem;
 }
 
 .footerCategories {
@@ -37,7 +39,10 @@
   }
 }
 
-.about, .general, .resources, .links {
+.about,
+.general,
+.resources,
+.links {
   display: flex;
   flex-direction: column;
   gap: 1.4rem;
@@ -59,7 +64,7 @@
   }
 }
 
-@media (min-width: 1700px) {
+@media screen and (min-width: 1700px) {
   .container {
     max-width: 1270px;
   }
@@ -77,5 +82,19 @@
     svg {
       padding: 0.4rem;
     }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .links {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .footerCategories {
+    padding-right: 3rem;
+    padding-left: 3rem;
+    margin-bottom: 6rem;
   }
 }
