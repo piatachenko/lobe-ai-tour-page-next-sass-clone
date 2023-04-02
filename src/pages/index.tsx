@@ -1,3 +1,4 @@
+import DownloadBtn from "@/components/DownloadBtn";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import styles from "@/styles/Home.module.scss";
@@ -82,7 +83,7 @@ export default function Home() {
             ) : null}
             <div className={styles.downloadSection}>
               <h2>Train your app with Lobe</h2>
-              <button>Download</button>
+              <DownloadBtn/>
             </div>
           </section>
         </main>

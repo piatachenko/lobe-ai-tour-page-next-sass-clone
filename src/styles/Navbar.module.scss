@@ -1,7 +1,4 @@
-@import "Home.module";
-
 @mixin navDownloadButton {
-  @include downloadButton;
   padding: {
     right: 1.4rem;
     left: 1.4rem;
@@ -90,20 +87,24 @@
 }
 
 .dropdownDownloadButton {
-  @include navDownloadButton;
-  width: 100%;
-  max-width: 15rem;
-  font-size: 1.2rem;
-  margin: {
-    top: 3rem;
-    right: auto;
-    left: auto;
-  }
   display: none;
+  button {
+    @include navDownloadButton;
+    margin: {
+      top: 3rem;
+      right: auto;
+      left: auto;
+    }
+    width: 100%;
+    max-width: 15rem;
+    font-size: 1.2rem;
+  }
 }
 
 .downloadButton {
-  @include navDownloadButton;
+  button {
+    @include navDownloadButton;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -114,9 +115,14 @@
 
 @media screen and (max-width: 800px) {
   .allItems,
-  .navToggle,
-  .dropdownDownloadButton {
+  .navToggle {
     display: block;
+  }
+
+  .dropdownDownloadButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .nav.dropped {

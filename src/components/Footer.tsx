@@ -38,7 +38,9 @@ export default function Footer() {
             <ul className={styles.general}>
               <li>General</li>
               <li>
-                <a href="https://www.lobe.ai/NOTICE.txt">Notice</a>
+                <a href="/NOTICE.txt" download>
+                  Notice
+                </a>
               </li>
               <li>
                 <a href="https://www.lobe.ai/license">License</a>

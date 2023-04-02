@@ -1,5 +1,6 @@
 import styles from "@/styles/Navbar.module.scss";
 import React, { useState } from "react";
+import DownloadBtn from "./DownloadBtn";
 import Hamburger from "./Hamburger";
 import Logo from "./Logo";
 
@@ -14,13 +15,12 @@ export default function Navbar({ currentPage }: NavbarProps) {
   }
   return (
     <>
-      <nav className={`${styles.nav} ${
-            mobileDropdownNavbar ? styles.dropped : ""
-          }`}>
-        
-        <ul
-          className={`${styles.allItems}`}
-        >
+      <nav
+        className={`${styles.nav} ${
+          mobileDropdownNavbar ? styles.dropped : ""
+        }`}
+      >
+        <ul className={`${styles.allItems}`}>
           <li>
             <ul className={styles.dropdownHeader}>
               <li className={styles.logo}>
@@ -41,9 +41,7 @@ export default function Navbar({ currentPage }: NavbarProps) {
             }`}
           >
             <ul className={styles.navItems}>
-              <li>
-                {/* <hr /> */}
-              </li>
+              <li>{/* <hr /> */}</li>
               <li>
                 <a
                   href="https://www.lobe.ai/"
@@ -89,10 +87,12 @@ export default function Navbar({ currentPage }: NavbarProps) {
                 </a>
               </li>
             </ul>
-            <button className={styles.dropdownDownloadButton}>Download</button>
+            <span className={styles.dropdownDownloadButton}>
+              <DownloadBtn />
+            </span>
           </li>
-          <li>
-            <button className={styles.downloadButton}>Download</button>
+          <li className={styles.downloadButton}>
+            <DownloadBtn />
           </li>
         </ul>
       </nav>
