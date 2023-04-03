@@ -46,13 +46,18 @@
   padding: 20px;
   position: relative;
   button {
-    width: 18px;
-    height: 18px;
+    padding: 10px;
     border-radius: 9999px;
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
+    span.hamburgerContainer {
+      display: block;
+      position: relative;
+      height: 18px;
+      width: 18px;
+    }
   }
 }
 

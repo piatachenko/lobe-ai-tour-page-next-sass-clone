@@ -30,7 +30,9 @@ export default function Navbar({ currentPage }: NavbarProps) {
               </li>
               <li className={styles.navToggle}>
                 <button onClick={handleClick}>
-                  <Hamburger currentState={mobileDropdownNavbar} />
+                  <span className={styles.hamburgerContainer}>
+                    <Hamburger currentState={mobileDropdownNavbar} />
+                  </span>
                 </button>
               </li>
             </ul>
